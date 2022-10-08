@@ -66,7 +66,6 @@ public class Basics {
         int my_variable = 100;
 
 
-
         /* Do not remove the line below: if you did task 2 correctly, then
          * you should see the message "my_variable's value is 100" if you run
          * this file!
@@ -104,7 +103,6 @@ public class Basics {
         for (int i = 10; i >= 0; i--) {
             System.out.println("Current count: " + i);
         }
-
     }
 
     /**
@@ -150,11 +148,12 @@ public class Basics {
         String[] split = to_split.split(" ");
         for (int i = 0; i < 7; ++i) {
             char c = split[i].charAt(0);
-            ret.setCharAt(i, c);
+            ret.append(c);
         }
 
         return ret.toString();
     }
+
 
     /**
      * 7. Below is a method that takes in an integer array (similar to a list
